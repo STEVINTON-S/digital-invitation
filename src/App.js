@@ -5,7 +5,6 @@ import './App.css';
 function ScratchCard({ revealText, label, subtext }) {
   const canvasRef = useRef(null);
   const [isRevealed, setIsRevealed] = useState(false);
-  const [scratchPercent, setScratchPercent] = useState(0);
   const isDrawing = useRef(false);
   const lastPos = useRef(null);
 
