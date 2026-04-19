@@ -5,6 +5,7 @@ import './App.css';
 function ScratchCard({ revealText, label, subtext }) {
   const canvasRef = useRef(null);
   const [isRevealed, setIsRevealed] = useState(false);
+  const [scratchPercent, setScratchPercent] = useState();
   const isDrawing = useRef(false);
   const lastPos = useRef(null);
 
@@ -232,7 +233,7 @@ export default function App() {
               <div className="hero-divider"><span /><span className="div-diamond">✦</span><span /></div>
               <h1 className="hero-names">
                 <span className="name-groom">John Pelix</span>
-                <span className="name-amp">&amp;</span>
+                <span className="name-amp">Weds</span>
                 <span className="name-bride">Nancy</span>
               </h1>
               <p className="hero-subtitle">Request the honour of your presence</p>
